@@ -1,3 +1,4 @@
+import random
 array0 = {
     "String1": ["String8", True],
     "String2": ["String8", True],
@@ -17,6 +18,6 @@ array3 = [x.name for x in DiscordCTXObject.author.roles]
 if any(x in array2 for x in list(array0)):
   array4 = [x for x in array2 if x in array1]
   array5 = [x for x in array3 if x in array1]
-  if array1.index(array0[array4[-1]][0]) <= array1.index(rank) and array1.index(array0[array4[-1]][0]) <= array1.index(array5[-1]):
+  if array1.index(array0[array4[-1]][0]) <= array1.index(random.choice(array1)) and array1.index(array0[array4[-1]][0]) <= array1.index(array5[-1]):
     #...
     return
